@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="first name" id="fn">
+    <input type="text" placeholder="last name">
+    <button>Merge</button>
+    <p id="demo"></p>
+<script>
+    let btn = document.querySelector("button")
+    btn.onclick = function(){
+        let inputs = document.querySelectorAll("input")
+        let para = document.querySelector("p")
+        para.innerHTML = inputs[0].value + " " + inputs[1].value
+    }
+    </script>
+    <!-- 
+        let button = document.querySelector("button")
+    button.onclick=function(){
+        let inputs = documents.querySelectorAll("input")
+        let para = document.querySelectore("p")
+        for (let i=0;i<inputs.length;i++){
+            para.innerHTML = para.innerHTML + inputs[i].values+"";
+        }
+    } 
+-->
+</body>
+</html>
