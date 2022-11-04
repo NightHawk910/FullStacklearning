@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <a href="" class="active">HTML</a>
+        <a href="">JS</a>
+        <a href="">Node</a>
+        <a href="">React</a>
+        <p id="demo"></p>
+    </div>
+   <script>
+
+    let para = document.getElementById("demo");
+    
+        let html = document.querySelectorAll("a")[0];
+        html.onclick = function(e){
+            e.preventDefault()
+ para.innerHTML = e.currentTarget.innerText
+
+        }
+        let JS= document.querySelectorAll("a")[1];
+        JS.onclick = function(e){
+            e.preventDefault()
+ para.innerHTML = e.currentTarget.innerText
+
+        }
+        let Node = document.querySelectorAll("a")[2];
+        Node.onclick = function(e){
+            e.preventDefault()
+ para.innerHTML = e.currentTarget.innerText
+
+        }
+        let react = document.querySelectorAll("a")[3];
+        react.onclick = function(e){
+            e.preventDefault()
+ para.innerHTML = e.currentTarget.innerText
+
+        }
+
+   </script> 
+</body>
+</html>
