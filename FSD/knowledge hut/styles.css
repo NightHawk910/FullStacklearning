@@ -1,66 +1,87 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+a{text-decoration: none;}
+
 .form {
     display: flex;
     height: 100vh;
-    
-  }
+
+}
+
 .left {
     width: 45%;
     padding: 2rem 4rem;
     padding-left: 100px;
 }
+
 .right {
     width: 55%;
 }
+
 .left .logo {
-display: flex;
-padding-top: 60px;
+    display: flex;
+    padding-top: 60px;
 
 }
+
 .top-con img {
     height: 25px;
     padding-left: 10px;
 }
-.top-con{ 
-   padding-top: 40px;
-    
+
+.top-con {
+    padding-top: 40px;
+
 }
-.left .login-form input{
+
+.left .login-form input {
     display: inline-block;
-height: 75px;
-width: 450px;
-margin-top: 20px;
+    height: 75px;
+    width: 450px;
+    margin-top: 20px;
+    padding-left: 8px;
 }
-.left .login-form .fp{
-   padding-top: 50px;
+
+.left .login-form .fp {
+    padding-top: 50px;
     font-size: larger;
-    
+
 }
-.left .login-form .fp a{
+
+.left .login-form .fp a {
     text-decoration: none;
+    position: relative;
 }
-.left .login-form .fp button{
+
+.left .login-form .fp button {
     margin-left: 195px;
     background-color: black;
     color: azure;
     height: 40px;
     width: 90px;
+    cursor: pointer;
 }
-.left .button-links{
+.left .login-form .fp button i{
+    transition: all 0.5s;
+}
+.left .login-form .fp button:hover i{
+    transform: translate(15px);
+}
+.left .button-links {
     padding-top: 150px;
     padding-left: 40px;
 }
-.button-links a{
+
+.button-links a {
     margin-left: 60px;
     margin-top: 10px;
     display: inline-flex;
     border: 2px solid #c4c3c3;
     font-size: 30px;
-    
+
     padding: 10px;
     border-radius: 50%;
 }
@@ -70,22 +91,45 @@ margin-top: 20px;
     padding-top: 40px;
     padding-left: 5px;
 }
-.right{
+
+.right {
     background: url(./bg.jpeg) no-repeat scroll center / cover;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   color: aliceblue;
-   
-  }
- 
-  .right img{
-display: flex;
-justify-content: center;
-height: 100%;
-  }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+
+}
+
+.right img {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
 .right .top-con-2 {
     text-align: center;
     padding-top: 150px;
+}
+
+.fb a {
+    position: relative;
+    overflow: hidden;
+}
+
+.fp a::before {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: 0;
+    background-color: blue;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.fp a:hover:before {
+    width: 70px;
+
 }
